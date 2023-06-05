@@ -13,8 +13,8 @@ public class ArraysDemo
                 {
                     if(arr[i]==arr[j])
                     {
-                     count++;
-                     arr[j]=-1;
+                        count++;
+                        arr[j]=-1;
                     }
                 }
                 pairs=pairs+count/2;
@@ -25,12 +25,12 @@ public class ArraysDemo
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,x[],i;
+        int x[],n,i;
         n=sc.nextInt();
         x=new int[n];
         for(i=0;i<n;i++)
-        x[i]=sc.nextInt();
-        
+         x[i]=sc.nextInt();
+          
         System.out.println(findPairs(x,n));
     }
 }
